@@ -9,8 +9,11 @@ class Transfer
   end
   
   def valid?(sender, receiver)
-    if sender && receiver
-  end
+    if (@sender && @receiver) @status == "pending" && @amount > 0
+      true
+    else
+      false
+    end
   
   def execute_transaction
     
