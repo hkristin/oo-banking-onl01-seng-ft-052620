@@ -28,7 +28,7 @@ class Transfer
   end
 
   def reverse_transfer
-    if 
+    if self.valid? && self.sender.balance
   end
 
   def reject_transfer 
