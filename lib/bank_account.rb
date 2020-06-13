@@ -9,6 +9,7 @@ end
 
 def deposit(money)
   @balance << 1000
+  @balance
 end
 
 def display_balance
