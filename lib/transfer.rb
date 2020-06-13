@@ -15,7 +15,8 @@ class Transfer
   end
   
   def execute_transaction
-    if self.valid? && self.balance > 0
+    if self.valid?
+      binding.pry
     else 
       
     end
