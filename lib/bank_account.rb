@@ -7,7 +7,7 @@ def initialize(name)
   @status = "open"
 end
 
-def deposit
+def deposit(money)
   @balance << 1000
 end
 
@@ -17,7 +17,7 @@ end
 
 def valid?
   if @status = "open" && @balance > 0
-    valid
+    return valid
   end
 end
 end
