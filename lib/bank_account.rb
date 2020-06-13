@@ -8,8 +8,7 @@ def initialize(name)
 end
 
 def deposit(money)
-  @balance << 1000
-  @balance
+  @balance + 1000
 end
 
 def display_balance
