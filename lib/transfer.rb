@@ -19,9 +19,11 @@ class Transfer
       #binding.pry
       self.sender.balance -= self.amount
       self.receiver.balance += self.amount
+      self.status = "complete"
     else 
+      self.status = "rejected"
       #binding.pry
-      "Transaction rejected. Please check your account balance."
+      return "Transaction rejected. Please check your account balance."
       
     end
   end
