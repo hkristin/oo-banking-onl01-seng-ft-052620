@@ -12,6 +12,7 @@ class Transfer
   
   def valid?
     binding.pry
+    
   end
   
   def execute_transaction
