@@ -20,7 +20,7 @@ class Transfer
       self.sender.balance -= self.amount
       self.receiver.balance += self.amount
     else 
-      binding.pry
+      #binding.pry
       "Transaction rejected. Please check your account balance."
       
     end
