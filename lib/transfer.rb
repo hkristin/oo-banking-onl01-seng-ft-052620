@@ -7,4 +7,7 @@ class Transfer
     @status = "pending"
     @transfer_amount = 5
   end
+  
+  def valid?
+  end
 end
