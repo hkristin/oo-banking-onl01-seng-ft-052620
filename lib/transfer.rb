@@ -1,3 +1,5 @@
+require 'pry'
+
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
   
@@ -9,12 +11,10 @@ class Transfer
   end
   
   def valid?(sender, receiver)
+    binding.pry
     if sender.valid? && receiver.valid?
-      TRUE
-    else
-      reject
+    end
   end
-end
   
   def execute_transaction
   end
