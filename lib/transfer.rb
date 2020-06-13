@@ -15,7 +15,6 @@ class Transfer
       false
     end
   end
-  end
   
   def execute_transaction
   end
